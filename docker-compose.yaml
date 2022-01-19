@@ -1,0 +1,7 @@
+web:
+  build: .
+  env_file:
+    - .env
+  command: python3 -u app/runner.py
+  volumes:
+    - .:/usr/src
