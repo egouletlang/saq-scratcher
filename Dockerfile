@@ -30,9 +30,7 @@ RUN apt-get install -y pip
 WORKDIR /usr/src
 
 COPY requirements.txt ./
-COPY setup.py ./
 
 RUN pip3 install --no-cache-dir -r requirements.txt
-RUN python3 setup.py develop
 
 COPY . .
